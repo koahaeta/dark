@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Extendido - Modo Oscuro</title>
+    <style>
+        /* Estilos para el modo oscuro */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+        .fondo {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Sitio Web Extendido - Modo Oscuro</h1>
+        <p>Explora nuestro contenido rico y diverso.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="fondo">
+        <!-- Sección de Bienvenida -->
+        <section>
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa dedicada a brindar soluciones tecnológicas innovadoras. Nuestro equipo de expertos trabaja arduamente para ofrecer productos y servicios de alta calidad.</p>
+            <p>Nuestro objetivo es proporcionar a nuestros clientes las herramientas necesarias para alcanzar sus metas y mejorar su rendimiento.</p>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Desarrollo Web</li>
+                <li>Diseño Gráfico</li>
+                <li>Marketing Digital</li>
+                <li>Consultoría Tecnológica</li>
+            </ul>
+            <p>Ofrecemos una gama completa de servicios para ayudar a tu negocio a destacar en el mercado digital.</p>
+        </section>
+
+        <!-- Sección de Portafolio -->
+        <section>
+            <h2>Portafolio</h2>
+            <div class="gallery">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <img src="proyecto3.jpg" alt="Proyecto 3">
+                <img src="proyecto4.jpg" alt="Proyecto 4">
+            </div>
+            <p>Aquí puedes ver algunos de los proyectos que hemos realizado para nuestros clientes.</p>
+        </section>
+
+        <!-- Sección de Blog -->
+        <section>
+            <h2>Últimas Entradas del Blog</h2>
+            <article>
+                <h3>Cómo Mejorar tu Presencia en Línea</h3>
+                <p>Publicado el 15 de Agosto de 2024</p>
+                <p>En este artículo, exploramos estrategias efectivas para mejorar la presencia en línea de tu empresa...</p>
+                <a href="blog/mejorar-presencia.html">Leer más</a>
+            </article>
+            <article>
+                <h3>Las Tendencias del Diseño Web en 2024</h3>
+                <p>Publicado el 10 de Agosto de 2024</p>
+                <p>Descubre las últimas tendencias en diseño web que están dominando este año...</p>
+                <a href="blog/tendencias-diseno-2024.html">Leer más</a>
+            </article>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section>
+            <h2>Testimonios</h2>
+            <blockquote>
+                <p>"Gracias a su increíble equipo, pudimos lanzar nuestro nuevo sitio web a tiempo y con un diseño impecable. ¡Muy recomendados!"</p>
+                <cite>- Juan Pérez, CEO de Empresa X</cite>
+            </blockquote>
+            <blockquote>
+                <p>"El servicio de marketing digital que nos ofrecieron ha aumentado significativamente nuestras ventas. Estamos muy satisfechos con los resultados."</p>
+                <cite>- María Gómez, Directora de Marketing en Empresa Y</cite>
+            </blockquote>
+        </section>
+
+        <!-- Sección de Formulario de Contacto -->
+        <section>
+            <h2>Contacto</h2>
+            <form action="/enviar-formulario" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p><a href="privacidad.html" style="color: #4CAF50;">Política de Privacidad</a> | <a href="terminos.html" style="color: #4CAF50;">Términos y Condiciones</a></p>
+    </footer>
+</body>
+</html>
